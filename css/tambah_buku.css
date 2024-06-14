@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1 {
+    color: black;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+}
+h2 {
+    color: #f4eded;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(61, 58, 58);
+    margin-bottom: 4px;
+    font-weight: normal;
+}
+h3 {
+    color: #999;
+    text-align: center;
+}
+
+table {
+    width: 100%; /* Sesuaikan dengan lebar kontainer */
+    border-collapse: collapse;
+    margin-top: 20px; /* Menambahkan jarak dari atas */
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px; /* Menambahkan padding */
+    text-align: center;
+    font-size: 14px;
+    color: rgb(7, 5, 5);
+    font-family: 'poppins', sans-serif;
+}
+th {
+    background-color: #aaa5a5;
+    color: white;
+}
+/* Efek baris yang bergantian */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    border: none;
+  }
+
+  .delete-btn {
+    
+    border: none;
+  }
+.btn {
+    position: absolute;
+    top: 10px; /* Jarak dari atas */
+    right: 10px; /* Jarak dari kanan */
+    padding: 10px 20px;
+    background-color: #CDE8E5;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: large;
+}
+.btn:hover {
+    background-color: #CDE8E5; /* Warna background saat hover */
+    transform: scale(1.05);
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+.side-menu {
+    position: fixed;
+    background: #20b2aa;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 10px;
+}
+.side-menu li {
+    font-size: 20px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover {
+    background:lightslategray;
+    color: black;
+}
+.side-menu li a {
+    color: white; /* Menetapkan warna putih pada teks tautan */
+    text-decoration: none; /* Menghilangkan garis bawah tautan */
+}
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: #CDE8E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.container .content {
+    display: flex;
+    justify-content: left; /* Menyelaraskan konten ke tengah secara horizontal */
+    align-items: flex-start; /* Menyelaraskan konten ke awal secara vertikal */
+    margin-top: 20vh; /* Menambahkan jarak dari header */
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+.container .content .card-tabel {
+    background-color: #9f9a9a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%; /* Ubah sesuai kebutuhan */
+    max-width: 800px; /* Ubah sesuai kebutuhan */
+    margin: 20px 0; /* Menambahkan jarak vertikal */
+}
+
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+form .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+input[type="text"],
+select {
+    width: 370px;
+    padding: 4px;
+    border: 0 solid #fbfafa;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: #999;
+}
+
+input[type="file"] {
+    border: none;
+    padding: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+input[type="reset"] {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+input[type="reset"]:hover {
+    background-color: rgb(172, 16, 16);
+}
+
+label-part1 {
+    color: lightgrey; /* Warna pertama */
+    background-color: #007bff;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.file-input-container label {
+    margin-right: 30px;
+}
