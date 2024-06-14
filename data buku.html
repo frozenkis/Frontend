@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/data buku.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>ADMIN</h1>
+        </div>
+        <ul>
+        <li><a href="utama.html"><i class="fas fa-tachometer-alt-fast"></i>&nbsp;<span>Dashboard</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-book"></i>&nbsp;<span>Data Buku</span></a></li>
+        <li><a href="#"><i class="fas fa-cart-plus"></i>&nbsp;<span>Peminjaman</span></a></li>
+        <li><a href="#"><i class="far fa-clock"></i>&nbsp;<span>Pengembalian</span></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="user">
+                    <a href="#" class="btn">ADMIN <i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card-table">
+                <div class="table-header">
+                    <button class="add-btn" onclick="window.location.href='data_buku.html'"><i class="fa-light fa-plus"></i>Tambah Data Buku</button>
+                    <div class="search-bar">
+                        <button onclick="searchTable()"><i class="fa-solid fa-search"></i></button>
+                        <input type="text" id="searchInput" placeholder="Search...">
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Judul Seri</th>
+                            <th>Kode Buku</th>
+                            <th>Penerbit</th>
+                            <th>Bahasa</th>
+                            <th>Deskripsi Fisik</th>
+                            <th>ISBN/ISSN</th>
+                            <th>Jumlah Buku</th>
+                            <th>Ketersediaan</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>abcd</td>
+                            <td>b12</td>
+                            <td>gramedia</td>
+                            <td>indonesia</td>
+                            <td>baik</td>
+                            <td>isbn</td>
+                            <td>12</td>
+                            <td>2</td>
+                            <td><button class="edit-btn" onclick="editRow(this)"><i class="fa-solid fa-pen" style="background-color: yellow;"></i></button>
+                                <button class="delete-btn" onclick="deleteRow(this)"><i class="fa-solid fa-trash-can" style="color:red"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 2</td>    
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td></td>  
+                            <td></td>  
+                            <td></td>  
+                            <td></td>  
+                        </tr>
+                        <tr>
+                            <td> 3</td>    
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td></td>  
+                            <td></td>  
+                            <td></td>  
+                            <td></td>  
+                        </tr>
+                        <tr>
+                            <td> 4</td>    
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td></td>  
+                            <td></td>  
+                            <td></td>  
+                            <td></td>  
+                        </tr>
+                        <tr>
+                            <td>5</td>    
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td> </td>  
+                            <td></td>  
+                            <td></td>  
+                            <td></td>  
+                            <td></td>  
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
