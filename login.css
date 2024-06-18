@@ -1,0 +1,134 @@
+/* Mengatur gaya dasar untuk body */
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: left; /* Mengatur konten di sebelah kiri */
+    align-items: center;
+    height: 100vh; /* Mengatur tinggi body untuk menutupi seluruh viewport */
+}
+
+/* Mengatur gaya dasar untuk container */
+.container {
+    background-color: #64CCC5;
+    width: 25%; /* Lebar 50% dari elemen induk */
+    height: 100vh; /* Tinggi 100% dari tinggi viewport */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Mengatur gaya dasar untuk content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Mengatur tinggi content untuk menutupi seluruh kontainer */
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+
+}
+
+/* Gaya untuk form login */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #64CCC5;
+    margin-left: 200px;
+    width: 400px;
+    height: 60vh;
+}
+
+form {
+    width: 100%;
+    max-width: 100%;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box; /* Menyesuaikan padding dan border dengan width yang ditentukan */
+}
+
+button {
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border: none;
+    float: right;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 60px;
+    box-sizing: border-box; /* Menyesuaikan padding dan border dengan width yang ditentukan */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Gaya untuk link di dalam form-container */
+.form-container ul {
+    list-style-type: none; /* Menghilangkan bullet list */
+    padding: 0;
+    margin: 0;
+}
+
+.form-container ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: #101010; /* Warna teks hitam */
+    margin-right: 10px; /* Jarak kanan antara link dan tombol */
+}
+
+.form-container ul li a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Gaya untuk link "Lupa Password" */
+.forgot-password {
+    margin-top: 50px; /* Jarak atas dari link */
+    text-align: center;
+    color: #f8f7f7;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #f8f7f7; /* Warna teks hitam */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries untuk perangkat dengan lebar maksimum 768px (tablet dan ponsel) */
+@media (max-width: 768px) {
+    .container {
+        width: 70%; /* Lebar 70% dari elemen induk */
+    }
+}
+
+/* Media queries untuk perangkat dengan lebar maksimum 480px (ponsel kecil) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Lebar 90% dari elemen induk */
+    }
+}
