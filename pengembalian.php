@@ -31,8 +31,15 @@
         <div class="content">
             
             <div class="card-table">
-                <h2>peminjam buku</h2>
+                <h2>Pengembalian</h2>
                 <br>
+                <div class="table-header">
+                    <button class="add-btn" onclick="window.location.href='tambah_pengembalian.php'"><i class="fa-light fa-plus"></i>Tambah Data Buku</button>
+                    <div class="search-bar">
+                        <button onclick="searchTable()"><i class="fa-solid fa-search"></i></button>
+                        <input type="text" id="searchInput" placeholder="Search...">
+                    </div>
+                </div>
         <table>
             <thead>
                 <tr>
